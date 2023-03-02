@@ -24,6 +24,10 @@ All:
 License/Copyright
 =================
 
+Some help from: https://andyjakubowski.com/tutorial/ink-bleed-effect-with-svg-filters
+Background image textures from/by https://www.photoshopsupply.com. Their license is in the folder with images in question.
+gutenburg ebooks from https://www.gutenburg.org
+
 Textual content is copyright Abram Hindle (C) 2013 under the CC-BY-SA
 4.0 unported license. Attribution should be a hyperlink to the
 repository and (C) 2013 Abram Hindle visibile in the text.

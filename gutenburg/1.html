@@ -3,6 +3,14 @@
 <link rel="stylesheet" href="./style.css">
 <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Italianno|Ballet' rel='stylesheet'>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Some help from: https://andyjakubowski.com/tutorial/ink-bleed-effect-with-svg-filters -->
+<svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="svgThreshold">
+        <feComponentTransfer>
+        <feFuncA class="transfer-func" type="discrete" tableValues="0 1" />
+        </feComponentTransfer>
+    </filter>
+    </svg>
 <title>The Project Gutenberg eBook of Dante's Divine Comedy, by Dante Alighieri</title>
 <link href="./The Project Gutenberg eBook of Dante&#39;s Divine Comedy, by Dante Alighieri_files/cover.jpg" rel="icon" type="image/x-cover" id="id-1529513940586666902">
 <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">

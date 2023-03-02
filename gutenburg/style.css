@@ -10,7 +10,13 @@ table.contents {
     margin: auto;
 }
 body {
-    background: fixed radial-gradient(transparent 80%, rgba(222, 187, 122, 0.408)), linear-gradient(to right, rgb(222, 212, 158) 1%, 5%, rgb(234, 234, 208), 95%, rgb(222, 212, 158) 99%);
+    color: rgb(30, 4, 0);
+    background-blend-mode: multiply, multiply, soft-light, soft-light, multiply;
+    background: fixed radial-gradient(transparent 80%, rgba(222, 187, 122, 0.408)),
+                linear-gradient(to right, rgb(222, 212, 158) 0%, 5%, transparent, 95%, rgb(222, 212, 158) 100%),
+                url("./VintagePapers/vintage-paper-texture-13\(seamless\)-by-PhotoshopSupply.jpg") repeat-y,
+                url("./VintagePapers/vintage-paper-texture-3-by-PhotoshopSupply.jpg") repeat-y,
+                rgb(234, 234, 208);
     font-size: 125%;
     margin-left: 20%;
     margin-right: 20%;
@@ -65,13 +71,16 @@ hr {
     margin-bottom: 2em
 }
 p {
-    color: rgb(30, 4, 0);
     text-align: left;
     margin: auto;
     text-indent: 1em;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     max-width: fit-content;
+}
+div.chapter p:dir(ltr) {
+    text-shadow: 0px 0px 0.02em rgb(71, 0, 0);
+    filter:blur(0.0085em) url(#svgThreshold) drop-shadow(0px 0px 1.25em rgba(54, 0, 0, 0.5));
 }
 div.chapter p:first-letter {
     font-family: 'parchment', Ballet, 'Brush Script MT';
