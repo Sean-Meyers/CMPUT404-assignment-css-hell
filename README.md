@@ -52,5 +52,7 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 Code is licensed under the Apache 2.0 license by Sean Meyers (C) 2023. Anything originally by gutenburg or other mentioned parties here is by them.
 
 Photographs of people are (C) 2023 CC BY-NC-ND 4.0 Sean Meyers.
+gutenburg1.png, gutenburg2.png, gutenburg3.png are (C) 2023 CC BY-SA 4.0 Sean Meyers.
+Any other images not mentioned here are (C) 2023 CC BY-NC-SA 4.0 Sean Meyers unless otherwise specified.
 
 
