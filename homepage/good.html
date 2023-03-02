@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./style.css">
+<html lang="en">
+<script>
+    function selectFragment(fragClass) {
+        for (const fragment of document.querySelectorAll(".Fragments")) {
+            fragment.style.setProperty('--hidden', 'none');
+        }
+        document.querySelector(fragClass).style.setProperty('--hidden', 'inherit');
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sean Meyers' Good Toast Page</title>
+</head>
+<body>
+    <section class="Header">
+        <div class="Logo">
+            <h1>Sean Meyers</h1>
+        </div>
+        <span class="Ribbon">
+            <button type='button' onclick="selectFragment('.Home');">Home</button>
+            <button type='button' onclick="selectFragment('.Blog');">Blog</button>
+            <button type='button' onclick="selectFragment('.WhoAmI');">Who Am I!?</button>
+            <button type='button' onclick="selectFragment('.Contact');">Contact</button>
+        </span>
+    </section>
+    <div Class="MainBody">
+        <section class="Fragments Home">
+            <img class="Img1" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
+            <div class="Text1">
+                <h2>The Toast</h2>
+                <p>Boy'd has...</p>
+            </div>
+            <div class="Text2">
+                <h2>The Toast</h2>
+                <p>Boy'd has...</p>
+            </div>
+            <img class="Img2" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
+            <img class="Img3" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
+            <div class="Text3">
+                <h2>The Toast</h2>
+                <p>Boy'd has...</p>
+            </div>
+            
+        </section>
+        <section class="Fragments Blog">
+            Blog
+        </section>
+        <section class="Fragments WhoAmI">
+            Who Am I!?
+        </section>
+        <section class="Fragments Contact">
+            Contact
+        </section>
+        <div class="Sidebar">
+            <h2>Intersting Points</h2>
+            <div>
+                <h3>Hello World</h3>
+                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+            </div>
+        </div>
+    </div>
+    <section class="Footer">
+        <span class="Ribbon">
+            <button type='button' onclick="selectFragment('.Home');">Home</button>
+            <button type='button' onclick="selectFragment('.Blog');">Blog</button>
+            <button type='button' onclick="selectFragment('.WhoAmI');">Who Am I!?</button>
+            <button type='button' onclick="selectFragment('.Contact');">Contact</button>
+        </span>
+    </section>
+</body>
+</html>

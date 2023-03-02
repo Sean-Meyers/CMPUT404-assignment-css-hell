@@ -1,0 +1,112 @@
+html, body {
+    display: grid;
+    margin: 0;
+    /* min-height: 100vh; */
+
+}
+.Header {
+    background-color: blue;
+    /* width: 100%; */
+    /* padding: 0.5em; */
+    top: 0%;
+    text-align: center;
+}
+.Header .Ribbon {
+    background-color: grey;
+    display: block;
+    padding: 0.5em;
+}
+.MainBody {
+    margin: 1%;
+}
+.Fragments {
+    --hidden: none;
+    display: var(--hidden);
+    float: left;
+    position: relative;
+    background-color: red;
+
+}
+.Home {
+    --hidden: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 3;
+    width: 66%
+}
+.Img1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 1;
+}
+.Text1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.Img2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-column-end: 2;
+}
+.Text2 {
+    grid-row-start: 2;
+    grid-column-end: 2;
+}
+.Text3 {
+    grid-row-start: 3;
+    grid-column-end: 3;
+}
+.Img3 {
+    grid-row: 3;
+}
+.Sidebar {
+    background-color: yellow;
+    text-align: center;
+    padding: 1em;
+    float: right;
+    max-width: 25%;
+    position: relative;
+}
+.Footer {
+    background-color: green;
+    text-align: center;
+    /* min-width: 100%; */
+    vertical-align: bottom;
+    padding: 0.5em;
+    /* max-height: ; */
+    /* position: relative; */
+}
+
+
+
+
+/* .Header {
+    background-color: blue;
+    padding: 1em;
+    text-align: center;
+}
+.Fragments {
+    --hidden: none;
+    display: var(--hidden);
+    max-width: fit-content;
+    margin: auto;
+    float: left;
+}
+.Home {
+    --hidden: content;
+}
+.MainBody {
+    display: grid;
+    grid-template-columns: 66% 33%;
+    padding: 0.5em;
+}
+.Sidebar {
+    background-color: yellow;
+    text-align: center;
+}
+.Footer {
+    background-color: green;
+    text-align: center;
+    padding: 0.5em;
+} */
+
