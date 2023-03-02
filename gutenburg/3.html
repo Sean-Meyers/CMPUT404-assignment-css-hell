@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <!-- saved from url=(0058)https://www.gutenberg.org/cache/epub/768/pg768-images.html -->
 <link rel="stylesheet" href="./style.css">
+<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Italianno|Ballet' rel='stylesheet'>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Some help from: https://andyjakubowski.com/tutorial/ink-bleed-effect-with-svg-filters -->
+<svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="svgThreshold">
+        <feComponentTransfer>
+        <feFuncA class="transfer-func" type="discrete" tableValues="0 1" />
+        </feComponentTransfer>
+    </filter>
+</svg>
 <title>The Project Gutenberg eBook of Wuthering Heights, by Emily Brontë</title>
 <style>
 h3 {

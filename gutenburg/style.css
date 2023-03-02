@@ -82,9 +82,13 @@ div.chapter p:dir(ltr) {
     text-shadow: 0px 0px 0.02em rgb(71, 0, 0);
     filter:blur(0.0085em) url(#svgThreshold) drop-shadow(0px 0px 1.25em rgba(54, 0, 0, 0.5));
 }
-div.chapter p:first-letter {
+div.chapter p:first-of-type:first-letter {
     font-family: 'parchment', Ballet, 'Brush Script MT';
-    font-size:400%;
+    font-size:500%;
+}
+div.chapter p.footnote:first-letter {
+    font-family: Italianno, 'Brush Script MT';
+    font-size: inherit;
 }
 p.poem {
     text-indent: 0%;
@@ -125,11 +129,18 @@ div.fig {
     margin: 0 auto;
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 1em
+    margin-bottom: 1em;
+}
+img {
+    border-radius: 2%;    
 }
 p.caption {
     font-weight: bold;
     text-align: center
+}
+div.fig p.caption:first-letter {
+    font-family: inherit;
+    font-size: inherit;
 }
 a:link {
     color: blue;
