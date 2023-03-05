@@ -81,7 +81,7 @@ button {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row: 1;
-    width: 75%;
+    width: 10em;
     border-radius:50%
 }
 .Text1 {
