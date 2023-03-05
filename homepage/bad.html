@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="./good_style.css">
+<link rel="stylesheet" href="./bad_style.css">
 <html lang="en">
 <script>
     function selectFragment(fragClass, buttonId) {
@@ -19,32 +19,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Sean Meyers' Good Toast Page</title>
+    <title>Sean Meyers' Poppin' Toast Page</title>
 </head>
 <body>
     <section class="Header">
+        <div class="lens-center"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
         <!--Michael from Stackoverflow on how to get the text gradient and
             shadow to work together: https://stackoverflow.com/a/22887745 -->
-        <section class="Footer">
-            <span>
-                <br>
-            </span>
-        </section>
         <h1 class="gradient-shadow" title="Sean Meyers"><div>Sean Meyers</div></h1>
         <span class="Ribbon">
             <button id='Home' type='button' onclick="selectFragment('.Home', 'Home');">Home</button>
             <button id='History' type='button' onclick="selectFragment('.History', 'History');">History</button>
             <button id='About' type='button' onclick="selectFragment('.WhoAmI', 'About');">Who Am I!?</button>
             <button id='Skills' type='button' onclick="selectFragment('.Skills', 'Skills');">My Expertise</button>
-            <span Class="RibbonEmail">smmeyers@ualberta.ca</span>
+
         </span>
     </section>
     <div Class="MainBody">
         <section class="Fragments Home">
-            <img class="Img1" alt="Sean Meyers in black v-neck sweater with white dress shirt and red and black tie." src="./images/ProfilePic.jpg"></img>
+            <img class="Img1" alt="Purrball Danderlion the 5th" src="./images/cat.jpg"></img>
             <div class="Text1">
-                <h2>Who am I!?</h2>
-                <p>Hi there! I'm a fourth-year Computing Science major at the
+                <h2>Purrr....</h2>
+                <p>Hi there! I'm a fourth-year Catputing Science major at the
                     University of Alberta with a minor in Business. I was born
                     and raised in Edmonton, Alberta, and I'm passionate about
                     programming, game design, computers, and the arts!
@@ -53,12 +51,8 @@
             </div>
             <div class="Text2">
                 <h2>A Little History</h2>
-                <p> I have always been drawn to the world of game development.
-                    In fact, it was my passion for game development that
-                    initially led me to explore the world of programming.
-                    As I delved deeper into the world of computing, however,
-                    I discovered a new passion: the art and science of
-                    programming itself.
+                <p> If I had time... I could have so much fun making this look
+                    so much worse. Imagine all the fun I could have with WebGL...
                 </p>
                 <a onclick="selectFragment('.History', 'History');" href="#history">Read More</a>
             </div>
@@ -119,7 +113,7 @@
             <img class="Img2" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
         </section>
         <section class="Fragments WhoAmI" id="#about">
-            <img class="Img1" alt="Sean Meyers in black v-neck sweater with white dress shirt and red and black tie." src="./images/ProfilePic.jpg"></img>
+            <img class="Img1" alt="Purrball Danderlion the 5th" src="./images/cat.jpg"></img>
             <div class="Text1">
                 <h2 id="about">Who am I!?</h2>
                 <p>Hi there! I'm a fourth-year Computing Science major at the
