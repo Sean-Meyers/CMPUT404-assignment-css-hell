@@ -67,17 +67,15 @@ button {
     display: var(--hidden);
     float: left;
     position: relative;
-    /* background-color: red; */
-
-}
-.Home {
-    --hidden: grid;
-    grid-template-rows: 3;
-    grid-template-columns: 3;
     gap: 4%;
     max-width: 68%;
     margin: 1%
-    
+}
+.Home {
+    --hidden: grid;
+}
+.Skills {
+    row-gap: 0%;
 }
 .Img1 {
     grid-column-start: 1;
@@ -89,6 +87,7 @@ button {
     grid-column-end: 4;
 }
 .Img2 {
+    
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -130,12 +129,9 @@ button {
     filter: hue-rotate(-15deg) saturate(120%) contrast(170%) brightness(75%);
     box-shadow: 1px 0px 10px black;
     text-align: center;
-    /* min-width: 100%; */
     vertical-align: bottom;
     padding: 0.5em;
     word-spacing: 1.5em;
-    /* max-height: ; */
-    /* position: relative; */
 }
 .SmallText {
     font-size: small;
@@ -151,4 +147,9 @@ button {
     justify-content: center;
     margin: auto;
 }
-
+a {
+    color: rgb(0, 132, 255); 
+}
+a:hover {
+    color:rgb(25, 127, 175)
+}

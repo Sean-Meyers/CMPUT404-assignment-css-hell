@@ -2,11 +2,18 @@
 <link rel="stylesheet" href="./style.css">
 <html lang="en">
 <script>
-    function selectFragment(fragClass) {
+    function selectFragment(fragClass, buttonId) {
         for (const fragment of document.querySelectorAll(".Fragments")) {
             fragment.style.setProperty('--hidden', 'none');
         }
-        document.querySelector(fragClass).style.setProperty('--hidden', 'inherit');
+        for (const button of document.querySelectorAll("button")) {
+            button.style.setProperty('color', 'white');
+        }
+        for (const button of document.querySelectorAll("#"+buttonId)) {
+            button.style.setProperty('color', 'rgb(0, 132, 255)');
+        }
+        document.querySelector(fragClass).style.setProperty('--hidden', 'grid');
+        window.location.href="#"+buttonId;
     }
 </script>
 <head>
@@ -25,10 +32,10 @@
         </section>
         <h1 class="gradient-shadow" title="Sean Meyers"><div>Sean Meyers</div></h1>
         <span class="Ribbon">
-            <button type='button' onclick="selectFragment('.Home');">Home</button>
-            <button type='button' onclick="selectFragment('.History');">History</button>
-            <button type='button' onclick="selectFragment('.WhoAmI');">Who Am I!?</button>
-            <button type='button' onclick="selectFragment('.Skills');">My Expertise</button>
+            <button id='Home' type='button' onclick="selectFragment('.Home', 'Home');">Home</button>
+            <button id='History' type='button' onclick="selectFragment('.History', 'History');">History</button>
+            <button id='About' type='button' onclick="selectFragment('.WhoAmI', 'About');">Who Am I!?</button>
+            <button id='Skills' type='button' onclick="selectFragment('.Skills', 'Skills');">My Expertise</button>
             <span Class="RibbonEmail">smmeyers@ualberta.ca</span>
         </span>
     </section>
@@ -42,7 +49,7 @@
                     and raised in Edmonton, Alberta, and I'm passionate about
                     programming, game design, computers, and the arts!
                 </p>
-                <a href="./good.html#about">Read More</a>
+                <a onclick="selectFragment('.WhoAmI', 'About');" href="#about">Read More</a>
             </div>
             <div class="Text2">
                 <h2>A Little History</h2>
@@ -53,7 +60,7 @@
                     I discovered a new passion: the art and science of
                     programming itself.
                 </p>
-                <a href="./good.html#history">Read More</a>
+                <a onclick="selectFragment('.History', 'History');" href="#history">Read More</a>
             </div>
             <img class="Img2" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
             <img class="Img3" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
@@ -68,12 +75,12 @@
                     also gives me a unique perspective on working with artists
                     and musicians to create compelling game experiences.
                 </p>
-                <a href="./good.html#skills">Read More</a>
+                <a onclick="selectFragment('.Skills', 'Skills');" href="#skills">Read More</a>
             </div>
         </section>
         <section class="Fragments History" id="#history">
             <div class="Text2">
-                <h2>A Little History</h2>
+                <h2 id="history">A Little History</h2>
                 <p> I have always been drawn to the world of game development.
                     In fact, it was my passion for game development that
                     initially led me to explore the world of programming.
@@ -114,7 +121,7 @@
         <section class="Fragments WhoAmI" id="#about">
             <img class="Img1" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
             <div class="Text1">
-                <h2>Who am I!?</h2>
+                <h2 id="about">Who am I!?</h2>
                 <p>Hi there! I'm a fourth-year Computing Science major at the
                     University of Alberta with a minor in Business. I was born
                     and raised in Edmonton, Alberta, and I'm passionate about
@@ -147,7 +154,7 @@
         <section class="Fragments Skills">
             <img class="Img3" alt="Green pixel-art game controller 16x16" src="./images/GameController.png"></img>
             <div class="Text3">
-                <h2>What I have to offer...</h2>
+                <h2 id="skills">What I have to offer...</h2>
                 <p>Be it as a Game Developer or Software Engineer, I bring a
                     diverse range of experience and expertise to the table. As
                     a Game Developer, I have experience with professional game
@@ -224,16 +231,18 @@
             </div>
             <div class="SidebarContact">
                 <h2>Contact</h2>
-                <p>Email: smmeyers@ualberta.ca</p>
+                <p>Email: smmeyers@ualberta.ca <br>
+                    Github: http://github.com/sean-meyers/
+                </p>
             </div>
         </div>
     </div>
     <section class="Footer">
         <span class="Ribbon">
-            <button type='button' onclick="selectFragment('.Home');">Home</button>
-            <button type='button' onclick="selectFragment('.History');">History</button>
-            <button type='button' onclick="selectFragment('.WhoAmI');">Who Am I!?</button>
-            <button type='button' onclick="selectFragment('.Skills');">My Expertise</button>
+            <button id='Home' type='button' onclick="selectFragment('.Home', 'Home');">Home</button>
+            <button id='History' type='button' onclick="selectFragment('.History', 'History');">History</button>
+            <button id='About' type='button' onclick="selectFragment('.WhoAmI', 'About');">Who Am I!?</button>
+            <button id='Skills' type='button' onclick="selectFragment('.Skills', 'Skills');">My Expertise</button>
         </span>
     </section>
 </body>
