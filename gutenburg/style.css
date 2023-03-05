@@ -23,7 +23,7 @@ body {
     text-align: justify
 }
 h1, h2, h3, h4, h5 {
-    font-family: 'Cinzel Decorative', Garamond;
+    font-family: 'Cinzel Decorative', Garamond, serif;
     font-size:100%;
     text-align: center;
     font-style: normal;
@@ -59,7 +59,7 @@ h5 {
     page-break-before: avoid
 }
 div.chapter {
-    font-family: Italianno, 'Brush Script MT';
+    font-family: Italianno, 'Brush Script MT', cursive;
     text-align: center;
     font-size: 2rem;
     page-break-before: always;
@@ -83,11 +83,11 @@ div.chapter p:dir(ltr) {
     filter:blur(0.0085em) url(#svgThreshold) drop-shadow(0px 0px 1.25em rgba(54, 0, 0, 0.5));
 }
 div.chapter p:first-of-type:first-letter {
-    font-family: 'parchment', Ballet, 'Brush Script MT';
+    font-family: 'parchment', Ballet, 'Brush Script MT', cursive;
     font-size:500%;
 }
 div.chapter p.footnote:first-letter {
-    font-family: Italianno, 'Brush Script MT';
+    font-family: Italianno, 'Brush Script MT', cursive;
     font-size: inherit;
 }
 p.poem {

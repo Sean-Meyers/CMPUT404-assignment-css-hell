@@ -2,19 +2,62 @@ html, body {
     display: grid;
     margin: 0;
     /* min-height: 100vh; */
-
+    font-family: 'Yu Mincho', Garamond, serif;
 }
 .Header {
-    background-color: blue;
+    background-color: rgb(11, 95, 163);
     /* width: 100%; */
     /* padding: 0.5em; */
     top: 0%;
     text-align: center;
 }
+h1 {
+    position: relative;
+    font-size: 5.5em;
+    text-align: center;
+}
+h1 div {
+    background-image: linear-gradient(to top, rgb(255, 201, 102), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute; 
+    width: 100%;
+}
+h1:after {
+    text-shadow: 1px 1px 0.01em #000000,
+                 1px 1px 0.5em cyan,
+                 -1px -1px 1em cyan,
+                 1px -1px 1.5em cyan,
+                 -1px 1px 2em cyan,
+                 0px 0px 3em cyan;
+    color: transparent;
+}
+h2 {
+    font-size: xx-large;
+}
+.RibbonEmail {
+    font-size: larger;
+    font-weight: 900;
+    color: rgb(207, 149, 1);
+    text-shadow: 0px 0px 0.25em rgb(0, 0, 0);
+}
+.gradient-shadow:after {
+    content: attr(title); /* Pulls the text from the 'title' attribute to make the shadow */
+}
 .Header .Ribbon {
-    background-color: grey;
+    background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(105, 105, 105));
     display: block;
-    padding: 0.5em;
+    padding: 0.75em;
+    word-spacing: 1.5em;
+    box-shadow: 0px 5px 5px rgb(0, 132, 255);
+}
+button {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-weight: 725;
+    color: white;
+    text-shadow: 0px 0px 0.25em rgb(0, 0, 0);
 }
 .MainBody {
     margin: 2%;
@@ -67,59 +110,45 @@ html, body {
 .Sidebar {
     text-align: center;
     float: right;
-    max-width: 30%;
+    max-width: 25%;
     position: relative;
 }
 .SidebarPoints {
     margin: 1%;
     padding: 1em;
     background-color: rgb(241, 241, 241);
+    justify-content: center;
 }
 .SidebarContact {
     margin: 1%;
     padding: 1em;
-    background-color: orange;
+    border: solid beige;
 }
 .Footer {
-    background-color: green;
+    /* Backround wood texture from https://architextures.org/textures/729 License: https://architextures.org/terms*/
+    background-image: url(./images/Oak-Architextures.jpg);
+    filter: hue-rotate(-15deg) saturate(120%) contrast(170%) brightness(75%);
+    box-shadow: 1px 0px 10px black;
     text-align: center;
     /* min-width: 100%; */
     vertical-align: bottom;
     padding: 0.5em;
+    word-spacing: 1.5em;
     /* max-height: ; */
     /* position: relative; */
 }
-
-
-
-
-/* .Header {
-    background-color: blue;
-    padding: 1em;
-    text-align: center;
+.SmallText {
+    font-size: small;
+    margin-bottom: 10%;
 }
-.Fragments {
-    --hidden: none;
-    display: var(--hidden);
-    max-width: fit-content;
+.SidebarHeading {
+    color: rgb(25, 127, 175);
+    font-size: 1.5rem;
+    margin-bottom: -5%;
+}
+.SidebarSection {
+    max-width: 15rem;
+    justify-content: center;
     margin: auto;
-    float: left;
 }
-.Home {
-    --hidden: content;
-}
-.MainBody {
-    display: grid;
-    grid-template-columns: 66% 33%;
-    padding: 0.5em;
-}
-.Sidebar {
-    background-color: yellow;
-    text-align: center;
-}
-.Footer {
-    background-color: green;
-    text-align: center;
-    padding: 0.5em;
-} */
 

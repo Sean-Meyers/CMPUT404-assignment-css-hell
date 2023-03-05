@@ -16,9 +16,14 @@
 </head>
 <body>
     <section class="Header">
-        <div class="Logo">
-            <h1>Sean Meyers</h1>
-        </div>
+        <!--Michael from Stackoverflow on how to get the text gradient and
+            shadow to work together: https://stackoverflow.com/a/22887745 -->
+        <section class="Footer">
+            <span>
+                <br>
+            </span>
+        </section>
+        <h1 class="gradient-shadow" title="Sean Meyers"><div>Sean Meyers</div></h1>
         <span class="Ribbon">
             <button type='button' onclick="selectFragment('.Home');">Home</button>
             <button type='button' onclick="selectFragment('.History');">History</button>
@@ -181,45 +186,41 @@
         </section>
         <div class="Sidebar">
             <div class="SidebarPoints">
-                <h2>Intersting Points</h2>
-                <h3>Projects I Have Worked On</h3>
-                <ul>
-                    <li><a href="https://github.com/mfdavies/An-Elysian-Elegy">An Elysian Elegy</a></li>
-                    <li><a href="https://github.com/CMPUT301W22T29/QuiRky">QuiRky</a></li>
-                    <li><a href="https://github.com/Sean-Meyers/The-Fix">The Fix</a></li>
-                    <li><a href="https://github.com/Struckdown/Socks-And-Found">Socks And Found</a></li>
-                    <li><a href="https://github.com/Spencer-Comin/OOH-Return-to-Monke">Return to Monke</a></li>
-                </ul>
-                <h3>Tools I can Use</h3>
-                <ul>
-                    <li>Unreal Engine, Unity, Android Studio, Django, Visual Studio</li>
-                    <li>Git, Docker, Trello, Command Line</li>
-                </ul>
-                <h3>Languages I know</h3>
-                <ul>
-                    <li>C++, C, C#, Java</li>
-                    <li>Python, JavaScript, Lua</li>
-                    <li>CUDA, OpenGL, WebGL, RISC-V</li>
-                    <li>HTML, CSS, SQL</li>
-                </ul>
-                <h3>Things I Enjoy</h3>
-                <ul>
-                    <li>Drawing</li>
-                    <li>Reading</li>
-                    <li>Music</li>
-                    <li>Programming</li>
-                    <li>Games</li>
-                    <li>Tennis</li>
-                    <li>Latin Dance</li>
-                </ul>
-                <h3>Random Details</h3>
-                <ul>
-                    <li>Meticulous, Conscientious, Organized</li>
-                    <li>Independent, Team Player</li>
-                    <li>Internal Locus of Control</li>
-                    <li>Friendly Introvert</li>
-                    <li>Total Nerd and Proud</li>
-                </ul>
+                <h2>Intersting Points About Me</h2>
+                <div class="SidebarSection">
+                    <h3 class="SidebarHeading">Projects I Have Worked On</h3>
+                    <p class="SmallText"><a href="https://github.com/mfdavies/An-Elysian-Elegy">An Elysian Elegy</a> <br>
+                        <a href="https://github.com/CMPUT301W22T29/QuiRky">QuiRky</a> <br>
+                        <a href="https://github.com/Sean-Meyers/The-Fix">The Fix</a> <br>
+                        <a href="https://github.com/Struckdown/Socks-And-Found">Socks And Found</a> <br>
+                        <a href="https://github.com/Spencer-Comin/OOH-Return-to-Monke">Return to Monke</a>
+                    </p>
+                </div>
+                <div class="SidebarSection">
+                    <h3 class="SidebarHeading">Tools I can Use</h3>
+                    <p class="SmallText">Unreal Engine, Unity, Android Studio, Django, Visual Studio,
+                        Git, Docker, Trello, Command Line
+                    </p>
+                </div>
+                <div class="SidebarSection">
+                <h3 class="SidebarHeading">Languages I know</h3>
+                    <p class="SmallText">C++, C, C#, Java, Python, JavaScript, Lua,
+                        CUDA, OpenGL, WebGL, RISC-V, HTML, CSS, SQL
+                    </p>
+                </div>
+                <div class="SidebarSection">
+                    <h3 class="SidebarHeading">Things I Enjoy</h3>
+                    <p class="SmallText"> Drawing, Reading, Music, Programming,
+                        Games, Tennis, Latin Dance
+                    </p>
+                </div>
+                <div class="SidebarSection">
+                <h3 class="SidebarHeading">Random Details</h3>
+                    <p class="SmallText"> Meticulous, Conscientious, Organized,
+                        Internal Locus of Control, Friendly Introvert,
+                        A Total Nerd and Proud.
+                    </p>
+                </div>
             </div>
             <div class="SidebarContact">
                 <h2>Contact</h2>
