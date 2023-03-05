@@ -45,6 +45,7 @@ Small bits of code in svg tags in html files are from https://andyjakubowski.com
 Background image textures on the gutenburg html files from/by https://www.photoshopsupply.com. Their license is in the folder with images in question.
 gutenburg ebooks from https://www.gutenburg.org, licenses in the html files.
 Wood texture in homepage/good.html is from https://architextures.org/textures/729 Free for education and personal use, full details: https://architextures.org/terms
+Lens flare in bad_style.css is by Shimin Zhang from https://css-tricks.com/add-a-css-lens-flare-to-photos-for-a-bright-touch/
 
 Textual content is copyright Abram Hindle (C) 2013 under the CC-BY-SA
 4.0 unported license. Attribution should be a hyperlink to the
